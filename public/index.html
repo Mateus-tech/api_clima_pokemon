@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Clima do Pokemon</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Clima do Pokemon</h1>
+    <p class="lead">Pesquise uma cidade para ver o clima e um Pokemon associado!</p>
+  </header>
+
+  <main>
+    <section class="card search-card">
+      <input id="city-input" placeholder="Ex: Salvador, BR" />
+      <div class="actions">
+        <button id="search-btn">Pesquisar</button>
+        <button id="random-btn">Exemplo Aleatório</button>
+      </div>
+    </section>
+
+    <section id="result" class="card">
+      <div id="image-wrapper" class="image-wrapper">
+        <div id="image-overlay" class="image-overlay">
+          <h2 id="location-title">—</h2>
+          <p id="weather-summary">—</p>
+          <p id="pokemon-info" class="pokemon-info"></p> </div>
+      </div>
+
+      <div id="weather-details" class="weather-details">
+        <p><strong>Temperatura:</strong> <span id="temp">—</span></p>
+        <p><strong>Vento:</strong> <span id="wind">—</span></p>
+        <p><strong>Direção do vento:</strong> <span id="winddir">—</span></p>
+        <p id="extra-info"></p>
+      </div>
+    </section>
+
+    <section class="card tips-card">
+      <h3>Dicas</h3>
+      <ul>
+        <li>O Pokémon exibido  aleatório para o tipo de clima</li>
+        <li>Tente cidades com climas variados para ver diferentes tipos de Pokémon!</li>
+      </ul>
+    </section>
+  </main>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
